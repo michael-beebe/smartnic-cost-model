@@ -1,1 +1,6 @@
-# smartnic_cost_model
+# SmartNIC Offloading Cost Model
+
+<!-- ## Overview -->
+
+<!-- ## Citing -->
+
