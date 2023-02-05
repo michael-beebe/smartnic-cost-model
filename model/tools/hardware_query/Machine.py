@@ -3,7 +3,9 @@ from sys import platform
 import multiprocessing
 # from os import system
 
-# Machine class
+##########################################################
+#                     Machine class
+##########################################################
 class Machine:
     '''
     Machine class for storing all hardware features
@@ -27,9 +29,9 @@ class Machine:
         self.pcie_lanes = pcie_lanes
         self.interonnect_bandwidth = interconnect_bandwidth
  
-##########################################################
+#=====================================================
 #  Getters
-##########################################################
+#=====================================================   
     def get_platform(self): return self.platform
     def get_host_cpu_cores(self): return self.host_cpu_cores
     def get_host_clock_frequency(self): return self.host_clock_frequency
@@ -42,13 +44,13 @@ class Machine:
     def get_pcie_bandwidth(self): return self.pcie_bandwidth
     def get_pcie_lanes(self): return self.pcie_lanes
     
-##########################################################
+#=====================================================
 #  Setters
-##########################################################
+#=====================================================
     def set_platform(self, platform): self.platform = platform
     def set_host_cpu_cores(self, host_cpu_cores): self.host_cpu_cores = host_cpu_cores
     def set_host_clock_frequency(self, host_clock_frequency): self.host_clock_frequency = host_clock_frequency
-    def set_host_peak_flops(self, host_peak_flops): self.host_peak_flops = host_peak_flops
+    def set_host_peak_flops(self, host_peak_flops):self.host_peak_flops = host_peak_flops
     def set_host_mem_bandwidth(self, host_mem_bandwidth): self.host_mem_bandwidth = host_mem_bandwidth
     def set_snic_cpu_cores(self, snic_cpu_cores): self.snic_cpu_cores = snic_cpu_cores
     def set_snic_clock_frequency(self, snic_clock_frequency): self.snic_clock_frequency = snic_clock_frequency
@@ -57,9 +59,9 @@ class Machine:
     def set_pcie_bandwidth(self, pcie_bandwidth): self.pcie_bandwidth = pcie_bandwidth
     def set_pcie_lanes(self, pcie_lanes): self.pcie_lanes = pcie_lanes
     
-##########################################################
+#=====================================================
 #  Functions for querying the Machine class attributes
-##########################################################
+#=====================================================
 # Platform
     def query_platform(self):
         '''
@@ -136,9 +138,9 @@ class Machine:
         TODO:
         '''
         
-##########################################################
+#=====================================================
 #  Helper functions
-##########################################################
+#=====================================================
     def __str__(self):
         '''
         Return the following attributes as a string:
