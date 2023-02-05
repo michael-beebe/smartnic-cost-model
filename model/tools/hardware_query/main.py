@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
-# Library Imports
+# Library imports
 import sys
 
-# Class Imports
+# Class imports
 from Machine import Machine
 
 # Main function
@@ -32,12 +32,30 @@ def main():
     # Set the number of host cpu cores
     machine.set_host_cpu_cores(machine.query_host_cpu_cores())
     
-    # Set the host clock frequency
-
+    # TODO: Set the host clock frequency
+    
+    # TODO: Set the host peak FLOP/s
+    
+    # TODO: Set the host mem bandwidth
+    
+    # TODO: Set the smartnic cpu cores
+    
+    # TODO: Set the smartnic clock frequency
+    
+    # TODO: Set the smartnic memory bandwidth
+    
+    # TODO: Set the pcie bus bandwidth
+    
+    # TODO: Set the number of pcie lanes
+    
+    # TODO: Set the interconnect bandwidth
     
     # Print all Machine class attributes
     machine.print_all()
+    
+    # Exit program
+    sys.exit()
 
-
+# Call main
 if __name__ == "__main__":
     main()
