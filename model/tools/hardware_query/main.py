@@ -17,6 +17,7 @@ def main():
         host_mem_bandwidth=None,
         snic_cpu_cores=None,
         snic_clock_frequency=None,
+        snic_peak_flops=None,
         snic_mem_bandwidth=None,
         pcie_bandwidth=None,
         pcie_lanes=None,
